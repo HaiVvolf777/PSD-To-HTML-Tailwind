@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Studio 200</title>
+           <!-- <script src="./tailwind3.js"></script> -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;800&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+        <style>
+          .timer{
+        display:flex;
+        position: absolute;
+       align-items:center;
+        justify-content:center;
+        background-color:#FFFFFF;
+        height: 100vh;
+        width: 100vw;
+        }
+      
+        </style>
+      </head>
+      
+       <body>
+        <div class="timer  z-[99]  ">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 300 300" preserveAspectRatio="none" style="width:400; height:400; top:0; left:0;">
+            <circle cx="100" cy="100" r="57" id="pink-halo" fill="none" stroke="#514390" stroke-width="10" stroke-dasharray="0, 361" transform="rotate(-90,100,100)" />
+            <text id="myTimer" text-anchor="middle" x="100" y="110" style="font-size: 40px; fill:#6E5CC2;"></text>
+        </svg>
+        </div> 
+      
+      
+      <div>
+      <header class="text-gray-600 fixed w-full bg-[#514390] body-font overflow-hidden z-0">
+        <div class="container flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center mb-4 md:mb-0">
+      
+            <span class="ml-3 text-3xl text-white lg:pl-16 ">Nurency</span>
+          </a>
+      
+          <div class="md:ml-auto flex flex-wrap items-center text-base justify-end">
+            <i class="bi bi-bell-fill hidden lg:inline text-white pr-12 text-2xl cursor-pointer"></i>
+            <img src="istockphoto-1310095070-612x612.png" alt="" class="h-14 w-14" />
+            <ul class="pl-4">
+              <li class="text-[#BFFFFF] hidden lg:inline text-lg cursor-pointer">Luke Astero</li><br>
+              <li class="text-[#BFFFFF] hidden lg:inline text-sm sm:items-center cursor-pointer">Admin</li>
+            </ul>
+          </div>
+      
+        </div>
+      </header>
+      
+      
+      
+      <span class=" text-white fixed text-4xl mt-5 ml-5 cursor-pointer z-0" onclick="Openbar()">
+        <i class="bi bi-filter-left px-2 bg-gray-900 rounded-md lg:hidden md:hidden"></i>
+      </span>
+      <div class="sidebar fixed lg:top-24 sm:top-0 md:top-0 bottom-0 lg:left-0 left-[-300px] duration-1000 z-0
+        w-[300px] overflow-y-auto text-center bg-gradient-to-t from-[#514390] to-[#6E5CC2] shadow h-screen">
+        <div class="text-gray-100 text-xl">
+
+      <div>
+        
+
+        <div class="p-2.5 mt-2 flex items-center  px-4 duration-300 cursor-pointer  hover:bg-[#7D6CCC] hover:border-l-4 hover:border-white">
+          <i class="bi bi-person-fill"></i>
+          <span class="text-[15px] ml-4 text-gray-200">Profile</span>
+        </div>
+        <div class="p-2.5 mt-2 flex items-center px-4 duration-300 cursor-pointer  hover:bg-[#7D6CCC] hover:border-l-4 hover:border-white">
+          <i class="bi bi-people-fill"></i>
+          <span class="text-[15px] ml-4 text-gray-200">Users</span>
+        </div>
+        <div class="p-2.5 mt-2 flex items-center px-4 duration-300 cursor-pointer  hover:bg-[#7D6CCC] hover:border-l-4 hover:border-white">
+          <i class="bi bi-display-fill"></i>
+          <span class="text-[15px] ml-4 text-gray-200">Control panel</span>
+        </div>
+        <div class="p-2.5 mt-2 flex items-center px-4 duration-300 cursor-pointer  hover:bg-[#7D6CCC] hover:border-l-4 hover:border-white">
+            <i class="bi bi-window-split"></i>
+            <span class="text-[15px] ml-4 text-gray-200">Projects</span>
+          </div>
+          <div class="p-2.5 mt-2 flex items-center px-4 duration-300 cursor-pointer  hover:bg-[#7D6CCC] hover:border-l-4 hover:border-white">
+            <i class="bi bi-list-task"></i>
+            <span class="text-[15px] ml-4 text-gray-200">Task</span>
+          </div>
+
+          <div class="p-2.5 mt-2 flex items-center px-4 duration-300 cursor-pointer  hover:bg-[#7D6CCC] hover:border-l-4 hover:border-white">
+            <i class="bi bi-play-circle"></i>
+            <span class="text-[15px] ml-4 text-gray-200">Logs</span>
+          </div>
+          <div class="p-2.5 mt-2 flex items-center px-4 duration-300 cursor-pointer  hover:bg-[#7D6CCC] hover:border-l-4 hover:border-white">
+            <i class="bi bi-chat-left-fill"></i>
+            <span class="text-[15px] ml-4 text-gray-200">Group Chat</span>
+          </div>
+          <div class="p-2.5 mt-2 flex items-center px-4 duration-300 cursor-pointer  hover:bg-[#7D6CCC] hover:border-l-4 hover:border-white">
+            <i class="bi bi-file-earmark-fill"></i>
+            <span class="text-[15px] ml-4 text-gray-200">Report</span>
+          </div>
+      </div>
+    </div>
+  </div> 
+    <center class="lg:pt-24 pt-40">
+
+        <div class="grid grid-cols-2 gap-4 pt-8 ">
+            <div class="... ">
+                <a class="text-lg font-semibold lg:px-8 py-4 border-b-4 mx-6 px-4 border-purple-900 lg:mx-16 cursor-pointer ">User</a>
+                <a href="admin.html" class="text-lg font-semibold cursor-pointer ">Admin</a>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-4 pt-12 pl-28 pb-8">
+            <div class="... hidden lg:inline"> 
+                <a class="text-xl font-bold  ">Users</a>
+                <a class="border-2 border-[#A3A3A3] bg-white text-sm font-semibold rounded-md px-8 py-2 lg:ml-16 cursor-pointer">Export to CSV</a>
+            </div>
+            <div class="...">
+                <div class="flex items-center justify-center  ">
+                    <div class="flex border-2 border-gray-500 bg-white ml-8 rounded">
+                        
+                        <input type="text" class=" rounded-md py-2 w-64 mx-6 outline-none placeholder:text-[#A3A3A3]" placeholder="Type Anything">
+                    </div>
+                    <button class="hidden lg:inline px-4 py-2 rounded-md lg:mx-6  text-white bg-purple-800 border-l ">
+                        Search
+                    </button>
+                </div>
+            </div>
+          </div>
+     
+          <div class="container w-[70%]  px-4 pt-4 pb-4 flex-cols-1 bg-white lg:ml-36 mb-4" >
+            <div class="mx-auto flex flex-wrap">
+              <img alt="" class="lg:w-32 w-32 lg:h-32 h-32 object-cover object-center rounded" src="istockphoto-1165537740-612x612.png" >
+              <div class="lg:w-1/2 w-full lg:pl-10 mt-6 lg:mt-0" >
+                <h2 class="items-start justify-start flex text-lg font-bold" >Alex Hales</h2>
+                <table class="items-start justify-start flex sm:grid-cols-2">
+                  <tr>
+                    <th class="pr-8 text-base font-normal text-[#A3A3A3]">First Name</th>
+                    <th class="pr-8 text-base font-normal text-[#A3A3A3]">Last Name</th>
+                    <th class="pr-8 text-base font-normal text-[#A3A3A3]">Country</th>
+                    <th class="hidden lg:inline pr-8 text-base font-normal text-[#A3A3A3]">Gmail</th>
+                  </tr>
+                  <tr>
+                    <td class="font-semibold">Alex</td>
+                    <td class="font-semibold">Hales</td>
+                    <td class="font-semibold">England</td>
+                    <td class="font-semibold hidden lg:inline">Haiwolf77@gmail.com</td>
+                  </tr>
+                </table>
+                <p class="justify-start text-left text-[#A3A3A3]">Alex Hales is a career coach with 5+ years of experience helping job seekers navigate the job search through coaching.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container w-[70%]  px-4 pt-4 pb-4 flex-cols-1 bg-white lg:ml-36 mb-4" >
+            <div class="mx-auto flex flex-wrap">
+              <img alt="" class="lg:w-32 w-32 lg:h-32 h-32 object-cover object-center rounded" src="istockphoto-1165537740-612x612.png" >
+              <div class="lg:w-1/2 w-full lg:pl-10 mt-6 lg:mt-0" >
+                <h2 class="items-start justify-start flex text-lg font-bold" >Alex Hales</h2>
+                <table class="items-start justify-start flex sm:grid-cols-2">
+                  <tr>
+                    <th class="pr-8 text-base font-normal text-[#A3A3A3]">First Name</th>
+                    <th class="pr-8 text-base font-normal text-[#A3A3A3]">Last Name</th>
+                    <th class="pr-8 text-base font-normal text-[#A3A3A3]">Country</th>
+                    <th class="hidden lg:inline pr-8 text-base font-normal text-[#A3A3A3]">Gmail</th>
+                  </tr>
+                  <tr>
+                    <td class="font-semibold">Alex</td>
+                    <td class="font-semibold">Hales</td>
+                    <td class="font-semibold">England</td>
+                    <td class="font-semibold hidden lg:inline">Haiwolf77@gmail.com</td>
+                  </tr>
+                </table>
+                <p class="justify-start text-left text-[#A3A3A3]">Alex Hales is a career coach with 5+ years of experience helping job seekers navigate the job search through coaching.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container w-[70%]  px-4 pt-4 pb-4 flex-cols-1 bg-white lg:ml-36 mb-4" >
+            <div class="mx-auto flex flex-wrap">
+              <img alt="" class="lg:w-32 w-32 lg:h-32 h-32 object-cover object-center rounded" src="istockphoto-1165537740-612x612.png" >
+              <div class="lg:w-1/2 w-full lg:pl-10 mt-6 lg:mt-0" >
+                <h2 class="items-start justify-start flex text-lg font-bold" >Alex Hales</h2>
+                <table class="items-start justify-start flex sm:grid-cols-2">
+                  <tr>
+                    <th class="pr-8 text-base font-normal text-[#A3A3A3]">First Name</th>
+                    <th class="pr-8 text-base font-normal text-[#A3A3A3]">Last Name</th>
+                    <th class="pr-8 text-base font-normal text-[#A3A3A3]">Country</th>
+                    <th class="hidden lg:inline pr-8 text-base font-normal text-[#A3A3A3]">Gmail</th>
+                  </tr>
+                  <tr>
+                    <td class="font-semibold">Alex</td>
+                    <td class="font-semibold">Hales</td>
+                    <td class="font-semibold">England</td>
+                    <td class="font-semibold hidden lg:inline">Haiwolf77@gmail.com</td>
+                  </tr>
+                </table>
+                <p class="justify-start text-left text-[#A3A3A3]">Alex Hales is a career coach with 5+ years of experience helping job seekers navigate the job search through coaching.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container w-[70%]  px-4 pt-4 pb-4 flex-cols-1 bg-white lg:ml-36 mb-4" >
+            <div class="mx-auto flex flex-wrap">
+              <img alt="" class="lg:w-32 w-32 lg:h-32 h-32 object-cover object-center rounded" src="istockphoto-1165537740-612x612.png" >
+              <div class="lg:w-1/2 w-full lg:pl-10 mt-6 lg:mt-0" >
+                <h2 class="items-start justify-start flex text-lg font-bold" >Alex Hales</h2>
+                <table class="items-start justify-start flex sm:grid-cols-2">
+                  <tr>
+                    <th class="pr-8 text-base font-normal text-[#A3A3A3]">First Name</th>
+                    <th class="pr-8 text-base font-normal text-[#A3A3A3]">Last Name</th>
+                    <th class="pr-8 text-base font-normal text-[#A3A3A3]">Country</th>
+                    <th class="hidden lg:inline pr-8 text-base font-normal text-[#A3A3A3]">Gmail</th>
+                  </tr>
+                  <tr>
+                    <td class="font-semibold">Alex</td>
+                    <td class="font-semibold">Hales</td>
+                    <td class="font-semibold">England</td>
+                    <td class="font-semibold hidden lg:inline">Haiwolf77@gmail.com</td>
+                  </tr>
+                </table>
+                <p class="justify-start text-left text-[#A3A3A3]">Alex Hales is a career coach with 5+ years of experience helping job seekers navigate the job search through coaching.</p>
+              </div>
+            </div>
+          </div>
+          
+
+            <div class="container mx-auto flex flex-wrap my-4 justify-end items-end pt-4 pr-12">
+              <ul class="flex items-center justify-center">
+                <a href="two.html">  <li class="mr-3 p-2 cursor-pointer rounded-md bg-white border-[#00000029] shadow-md  shadow-gray-400  hover:bg-blue-100">
+                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.5-4.25a.75.75 0 010-1.08l4.5-4.25a.75.75 0 011.06.02z" clip-rule="evenodd" />
+                    </svg>
+                  </li></a>
+                <a href="index.html"> <li class="p-2 mr-3  h-8 w-10 rounded-lg cursor-pointer  bg-white text-[#8D99AE]  border-[#00000029] shadow-sm  shadow-gray-400  flex items-center justify-center  hover:bg-blue-100 hover:text-lg hover:font-bold">1</li></a>
+                <a href="two.html"> <li class="mr-3 p-2  h-8 w-10 cursor-pointer rounded-lg bg-white  text-[#8D99AE]  border-[#00000029] shadow-sm  shadow-gray-400   flex items-center justify-center hover:bg-blue-100 hover:text-lg hover:font-bold">2</li></a>
+                <a href="three.html"> <li class="p-2 mr-3  h-9 w-11  rounded-lg bg-white border-solid  border-2 text-black border-gray-200 shadow-sm  shadow-gray-400 font-bold  flex items-center justify-center cursor-pointer hover:text-lg hover:bg-blue-100">3</li></a>
+              <a href="four.html"> <li class="p-2 mr-3  h-8 w-10 rounded-lg cursor-pointer  bg-white text-[#8D99AE]  border-[#00000029] shadow-sm  shadow-gray-400  flex items-center justify-center  hover:bg-blue-100 hover:text-lg hover:font-bold">4</li></a> 
+              <a href="five.html"> <li class="p-2 mr-3  h-8 w-10 rounded-lg cursor-pointer  bg-white text-[#8D99AE]  border-[#00000029] shadow-sm  shadow-gray-400  flex items-center justify-center  hover:bg-blue-100 hover:text-lg hover:font-bold">5</li></a> 
+                
+              <a href="four.html">  <li class="mr-3 p-2 cursor-pointer rounded-lg border-[#00000029] shadow-sm bg-white shadow-gray-400  hover:bg-blue-100">
+                  <svg class="h-5 w-5 " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
+                  </svg>
+                </li></a>
+              </ul>
+            </div>    
+
+    </center>
+       
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        setTimeout(function(){
+            $('.timer').fadeToggle();
+        }, 5000);
+    </script> 
+  
+<script>
+  (function () {
+    var circle = document.getElementById('pink-halo');
+    var myTimer = document.getElementById('myTimer');
+    var t = 30;
+    var interval = 30;
+    var angle = 0;
+    var angle_increment = 360/t;
+    var intervalCounter = 0;
+  
+    window.timer = window.setInterval(function () {
+      intervalCounter ++;    
+        circle.setAttribute("stroke-dasharray", angle + ", 361");
+     
+       myTimer.innerHTML = t - parseInt((angle/360)*t);
+
+        if (angle >= 360) {
+            window.clearInterval(window.timer);
+        }
+
+      angle += angle_increment/(1000/interval);
+    }.bind(this), interval);
+})()
+</script>
+    
+
+    <script>
+        function dropDown() {
+            document.querySelector('#submenu')
+            document.querySelector('#arrow')
+        }
+        dropDown()
+
+        function Openbar() {
+            document.querySelector('.sidebar').classList.toggle('left-[-300px]')
+        }
+    </script>
+</body>
+
+</html>
